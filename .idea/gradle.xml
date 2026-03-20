@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/build-logic" name="build-logic">
+                <projects>
+                  <project path="$PROJECT_DIR$/build-logic" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/benchmarks" />
+            <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/ble" />
+            <option value="$PROJECT_DIR$/core/common" />
+            <option value="$PROJECT_DIR$/core/database" />
+            <option value="$PROJECT_DIR$/core/location" />
+            <option value="$PROJECT_DIR$/core/map" />
+            <option value="$PROJECT_DIR$/core/model" />
+            <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/core/ui" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/feature-ble" />
+            <option value="$PROJECT_DIR$/feature/feature-location" />
+            <option value="$PROJECT_DIR$/feature/feature-map" />
+            <option value="$PROJECT_DIR$/feature/feature-setting" />
+            <option value="$PROJECT_DIR$/feature/feature-user" />
+            <option value="$PROJECT_DIR$/feature/roadtest" />
+            <option value="$PROJECT_DIR$/infra" />
+            <option value="$PROJECT_DIR$/infra/ble-impl" />
+            <option value="$PROJECT_DIR$/infra/database-impl" />
+            <option value="$PROJECT_DIR$/infra/location-impl" />
+            <option value="$PROJECT_DIR$/infra/log" />
+            <option value="$PROJECT_DIR$/infra/map-baidu" />
+            <option value="$PROJECT_DIR$/infra/network-impl" />
+            <option value="$PROJECT_DIR$/infra/permission" />
+            <option value="$PROJECT_DIR$/testing" />
+            <option value="$PROJECT_DIR$/testing/fake-database" />
+            <option value="$PROJECT_DIR$/testing/fake-location" />
+            <option value="$PROJECT_DIR$/testing/fake-network" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
