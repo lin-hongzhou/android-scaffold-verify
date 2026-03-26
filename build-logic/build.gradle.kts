@@ -14,16 +14,17 @@ java {
 }
 
 dependencies {
-    // 关键：引入 Android Gradle Plugin API
-    implementation("com.android.tools.build:gradle:8.3.2")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+    // 通过 version catalog 引用，与项目版本保持一致
+    implementation(libs.android.gradlePlugin)
+    implementation(libs.kotlin.gradlePlugin)
+    implementation(libs.compose.gradlePlugin)
 }
 
 gradlePlugin {
     plugins {
         register("architectureRules") {
             id = "company.architecture.rules"
-            implementationClass = "com.company.buildlogic.ArchitectureRulesPlugin"
+            implementationClass = "com.lhz.buildlogic.ArchitectureRulesPlugin"
         }
 
         register("androidApplication") {
@@ -39,6 +40,11 @@ gradlePlugin {
         register("compose") {
             id = "scaffold.android.compose"
             implementationClass = "ComposeConventionPlugin"
+        }
+
+        register("androidFeature") {
+            id = "scaffold.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
         }
     }
 }
